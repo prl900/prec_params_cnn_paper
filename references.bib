@@ -1,0 +1,871 @@
+%
+% JOURNAL ABBREVIATIONS
+%
+@STRING{AMS 	= "Amer.\ Meteor.\ Soc."}
+@STRING{AGU 	= "Amer.\ Geophys.\ Union"}
+@STRING{AIP 	= "Amer. Inst. Phys."}
+@STRING{ADGEO     = "Adv.\ Geosci."}
+@STRING{AFM       = "Agric.\ For.\ Meteor."}
+@STRING{AM        = "Ann.\ Meteor."}
+@STRING{AN        = "Astrophys.\ Norv."}		% Astrophysica Norvegica
+@STRING{AO        = "Atmos.--Ocean"}			% Atmosphere--Ocean, published by Canadian Meteorological Society (CMOS)
+@STRING{AR        = "Atmos.\ Res."}			% Atmospheric Research
+@STRING{ARFM      = "Annu.\ Rev.\ Fluid Mech."}
+@STRING{AUMET     = "Aust.\ Meteor.\ Mag."}
+@STRING{BAMS      = "Bull.\ Amer.\ Meteor.\ Soc."}
+@STRING{CAP       = "Contrib.\ Atmos.\ Phys."}
+@STRING{CC        = "Climate Change"}      % Climate Change 
+@STRING{CCH       = "Climatic Change"}			% Climatic Change
+@STRING{CDYN      = "Climate Dyn."}
+@STRING{CHAOS     = "Chaos"}
+@STRING{COL       = "Collier's"}
+@STRING{CRS       = "Cont.\ Shelf Res."}
+@STRING{DAO       = "Dyn.\ Atmos.\ Oceans"}
+@STRING{ECO       = "Ecology"}
+@STRING{EI        = "Earth Interact."}
+@STRING{GA        = "Geophysica"}			% Geophysica, published by Geophysical Society of Finland 
+@STRING{GEOMAG    = "Geophys.\ Mag."}
+@STRING{GN        = "Geophys.\ Norv."}			% Geophysica Norvegica
+@STRING{GRL       = "Geophys.\ Res.\ Lett."}
+@STRING{GEOINT    = "Geofis.\ Int."}			% Geofisica Internacional (Mexican journal -- vols. 3--5 contained proceedings from a hurricane conference
+@STRING{GEOPUB    = "Geofys.\ Publ."}
+@STRING{GPC       = "Global Planet.\ Change"}
+@STRING{HP        = "Health Phys."}
+@STRING{IAOP      = "Izv.\ Atmos.\ Ocean.\ Phys.\ (Engl.\ Transl.)"}
+@STRING{IJC       = "Int.\ J.\ Climatol."}
+@STRING{JAM       = "J.\ Appl.\ Meteor."}		% renamed to name below in 2006
+@STRING{JAMC      = "J.\ Appl.\ Meteor.\ Climatol."}  	% Journal of Applied Meteorology and Climatology (this journal used to be called the Journal of Applied Meteorology before 2006)
+@STRING{JAS       = "J.\ Atmos.\ Sci."}
+@STRING{JAOT      = "J.\ Atmos.\ Oceanic Technol."}
+@STRING{JCAM      = "J.\ Climate Appl.\ Meteor."}	% from 1983--87, now JAMC
+@STRING{JCLI      = "J.\ Climate"}
+@STRING{JCR       = "J.\ Coastal Res."}
+@STRING{JFM       = "J.\ Fluid\ Mech."}
+@STRING{JEM       = "J.\ Eng.\ Math."}			% Journal of Engineering Mathematics
+@STRING{JGR       = "J.\ Geophys.\ Res."}
+@STRING{JHM       = "J.\ Hydrometeor."}
+@STRING{JMS       = "J.\ Mar.\ Syst."}
+@STRING{JM        = "J.\ Meteor."}
+@STRING{JMR       = "J.\ Mar.\ Res."}
+@STRING{JMSJ      = "J.\ Meteor.\ Soc.\ Japan"}
+@STRING{JPO       = "J.\ Phys.\ Oceanogr."}
+@STRING{JOCEAN    = "J.\ Oceanogr."}			% Journal of Oceanography
+@STRING{JOSJ      = "J.\ Oceanogr.\ Soc.\ Japan"}
+@STRING{JSE       = "J.\ Struct.\ Eng."}	% Journal of Structural Engineering at ASCE
+@STRING{JTM       = "J.\ Tropical Meteor."}
+@STRING{JWEIA     = "J.\ Wind Eng.\ Ind.\ Aerodyn."}
+@STRING{MA        = "Meteor.\ Appl."}
+@STRING{MAP       = "Meteor.\ Atmos.\ Phys."}
+@STRING{METMON    = "Meteor.\ Monogr."}
+@STRING{METZEIT   = "Meteor.\ Z."}
+@STRING{MWL       = "Mar.\ Wea.\ Log"}
+@STRING{MWR       = "Mon.\ Wea.\ Rev."}
+@STRING{NAT       = "Nature"}
+@STRING{NHR       = "Nat.\ Hazards Rev."}
+@STRING{NWD       = "Natl.\ Weather Dig."}
+@STRING{OA        = "Oceanol. Aeta"}
+@STRING{OCEAN     = "Oceanography"}                	% a quarterly journal of The Oceanography Society
+@STRING{PAG       = "Pure Appl.\ Geophys."}
+@STRING{PF        = "Phys.\ Fluids"}
+@STRING{PHYSD     = "Physica D"}
+@STRING{PMG       = "Pap.\ Meteor.\ Geophys."}	% Papers in Meteorology and Geophysics
+@STRING{PNAS      = "Proc.\ Natl.\ Acad.\ Sci.\ (USA)"}
+@STRING{PRE       = "Phys.\ Rev.\ E"}
+@STRING{PRSA      = "Proc.\ Roy.\ Soc."}
+@STRING{PT        = "Phys.\ Today"}
+@STRING{PTRS      = "Philos.\ Trans.\ Roy.\ Soc.\ London"}
+@STRING{QJRMS     = "Quart.\ J.\ Roy.\ Meteor.\ Soc."}
+@STRING{RGEO      = "Rev. Geophys."}
+@STRING{SCI       = "Science"}
+@STRING{SOLA      = "SOLA"}				% Scientific Online Letters on the Atmosphere
+@STRING{TAGU      = "Eos, Trans.\ Amer.\ Geophys.\ Union"}
+@STRING{TELLUS    = "Tellus"}
+@STRING{TCFD      = "Theor.\ Comput.\ Fluid Dyn."}
+@STRING{WEA       = "Weather"}
+@STRING{WW        = "Weatherwise"}
+@STRING{WF        = "Wea.\ Forecasting"}
+@STRING{WMOB      = "WMO Bull."}
+
+% SAMPLE REFERENCES. Remove these and insert your own reference database.
+
+@article{Becker+Schmitz2003,
+         author = {E. Becker and G. Schmitz},
+         title = {Climatological effects of orography and land--sea heating contrasts on the gravity
+                  wave--driven circulation of the mesosphere},
+         journal = {J. Atmos. Sci.},
+         year = {2003},
+         volume = 60,
+         pages = {103--118}, 
+        doi = {10.1175/1520-0469(2003)060<0103:CEOOAL>2.0.CO;2}}
+
+@article{Knutti2008,
+	author={R. Knutti and M. R. Allen and P. Friedlingstein and J. M. Gregory and G. C. Hegerl and G. A. Meeh and M. Meinshausen and J. M. Murphy and G.-K. Plattne and S. C. B. Raper 		and T. F. Stocker and P. A. Stott and H. Teng and and T. M. L. Wigley},
+	title={A review of uncertainties in global temperature projections over the twenty-first century},
+	journal = {J. Climate},
+	year = {2008},
+	volume = 21,
+	pages = {2651--2663},
+          doi = {10.1175/2007JCLI2119.1}}
+
+@article {EmeryEA1986,
+author = {Emery, W. J. and Thomas, A. C. and Collins, M. J. and Crawford, W. R. and Mackas, D. L.},
+title = {An objective method for computing advective surface velocities from sequential infrared satellite images},
+journal = {J. Geophys. Res.},
+volume = {91},
+doi = {10.1029/JC091iC11p12865},
+pages = {12865--12878},
+year = {1986}
+}
+
+@article{lopez2007cloud,
+  title={Cloud and precipitation parameterizations in modeling and variational data assimilation: A review},
+  author={Lopez, Philippe},
+  journal={Journal of the Atmospheric Sciences},
+  volume={64},
+  number={11},
+  pages={3766--3784},
+  year={2007}
+}
+
+@article{badrinarayanan2017segnet,
+  title={Segnet: A deep convolutional encoder-decoder architecture for image segmentation},
+  author={Badrinarayanan, Vijay and Kendall, Alex and Cipolla, Roberto},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={39},
+  number={12},
+  pages={2481--2495},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{mao2016image,
+  title={Image restoration using very deep convolutional encoder-decoder networks with symmetric skip connections},
+  author={Mao, Xiaojiao and Shen, Chunhua and Yang, Yu-Bin},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2802--2810},
+  year={2016}
+}
+
+@article{dee2011era,
+  title={The ERA-Interim reanalysis: Configuration and performance of the data assimilation system},
+  author={Dee, Dick P and Uppala, SM and Simmons, AJ and Berrisford, Paul and Poli, P and Kobayashi, S and Andrae, U and Balmaseda, MA and Balsamo, G and Bauer, P and others},
+  journal={Quarterly Journal of the royal meteorological society},
+  volume={137},
+  number={656},
+  pages={553--597},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{ronneberger2015u,
+  title={U-net: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={International Conference on Medical image computing and computer-assisted intervention},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+
+@inproceedings{long2015fully,
+  title={Fully convolutional networks for semantic segmentation},
+  author={Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3431--3440},
+  year={2015}
+}
+
+@inproceedings{masci2011stacked,
+  title={Stacked convolutional auto-encoders for hierarchical feature extraction},
+  author={Masci, Jonathan and Meier, Ueli and Cire{\c{s}}an, Dan and Schmidhuber, J{\"u}rgen},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={52--59},
+  year={2011},
+  organization={Springer}
+}
+
+@article{renard1965experiments,
+  title={Experiments in numerical objective frontal analysis},
+  author={Renard, Robert J and Clarke, Leo C},
+  year={1965}
+}
+
+@inproceedings{dalal2005histograms,
+  title={Histograms of oriented gradients for human detection},
+  author={Dalal, Navneet and Triggs, Bill},
+  booktitle={Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on},
+  volume={1},
+  pages={886--893},
+  year={2005},
+  organization={IEEE}
+}
+
+@article{lowe2004distinctive,
+  title={Distinctive image features from scale-invariant keypoints},
+  author={Lowe, David G},
+  journal={International journal of computer vision},
+  volume={60},
+  number={2},
+  pages={91--110},
+  year={2004},
+  publisher={Springer}
+}
+
+@article{hope2014comparison,
+  title={A comparison of automated methods of front recognition for climate studies: A case study in southwest Western Australia},
+  author={Hope, Pandora and Keay, Kevin and Pook, Michael and Catto, Jennifer and Simmonds, Ian and Mills, Graham and McIntosh, Peter and Risbey, James and Berry, Gareth},
+  journal={Monthly Weather Review},
+  volume={142},
+  number={1},
+  pages={343--363},
+  year={2014}
+}
+
+@incollection{bottou2010large,
+  title={Large-scale machine learning with stochastic gradient descent},
+  author={Bottou, L{\'e}on},
+  booktitle={Proceedings of COMPSTAT'2010},
+  pages={177--186},
+  year={2010},
+  publisher={Springer}
+}
+
+@incollection{scherer2010evaluation,
+  title={Evaluation of pooling operations in convolutional architectures for object recognition},
+  author={Scherer, Dominik and M{\"u}ller, Andreas and Behnke, Sven},
+  booktitle={Artificial Neural Networks--ICANN 2010},
+  pages={92--101},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{badrinarayanan2017segnet,
+  title={Segnet: A deep convolutional encoder-decoder architecture for image segmentation},
+  author={Badrinarayanan, Vijay and Kendall, Alex and Cipolla, Roberto},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={39},
+  number={12},
+  pages={2481--2495},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{mikolov2010recurrent,
+  title={Recurrent neural network based language model},
+  author={Mikolov, Tom{\'a}{\v{s}} and Karafi{\'a}t, Martin and Burget, Luk{\'a}{\v{s}} and {\v{C}}ernock{\`y}, Jan and Khudanpur, Sanjeev},
+  booktitle={Eleventh Annual Conference of the International Speech Communication Association},
+  year={2010}
+}
+
+@article{saeys2007review,
+  title={A review of feature selection techniques in bioinformatics},
+  author={Saeys, Yvan and Inza, I{\~n}aki and Larra{\~n}aga, Pedro},
+  journal={bioinformatics},
+  volume={23},
+  number={19},
+  pages={2507--2517},
+  year={2007},
+  publisher={Oxford University Press}
+}
+
+@conference {LTG-81,
+	title = {A short history of the PBL parameterization at ECMWF},
+	booktitle = {Workshop on Planetary Boundary Layer parameterization, 25-27 November 1981},
+	year = {1982},
+	pages = {59-79},
+	publisher = {ECMWF},
+	organization = {ECMWF},
+	address = {Shinfield Park, Reading},
+	author = {J-F. Louis and Tiedtke, M. and J.-F. Geleyn}
+}
+
+@book{coiffier2011fundamentals,
+  title={Fundamentals of numerical weather prediction},
+  author={Coiffier, Jean},
+  year={2011},
+  publisher={Cambridge University Press}
+}
+
+@article{reunanen2003overfitting,
+  title={Overfitting in making comparisons between variable selection methods},
+  author={Reunanen, Juha},
+  journal={Journal of Machine Learning Research},
+  volume={3},
+  number={Mar},
+  pages={1371--1382},
+  year={2003}
+}
+
+@inproceedings{long2015fully,
+  title={Fully convolutional networks for semantic segmentation},
+  author={Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={3431--3440},
+  year={2015}
+}
+
+@inproceedings{lecun2010convolutional,
+  title={Convolutional networks and applications in vision},
+  author={LeCun, Yann and Kavukcuoglu, Koray and Farabet, Cl{\'e}ment},
+  booktitle={Circuits and Systems (ISCAS), Proceedings of 2010 IEEE International Symposium on},
+  pages={253--256},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{scherer2010evaluation,
+  title={Evaluation of pooling operations in convolutional architectures for object recognition},
+  author={Scherer, Dominik and M{\"u}ller, Andreas and Behnke, Sven},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={92--101},
+  year={2010},
+  organization={Springer}
+}
+
+@booklet {1321008426928,
+	title = {The ERA-Interim archive Version 2.0},
+	journal = {ERA Report Series},
+	number = {1},
+	year = {2011},
+	month = {November},
+	pages = {23},
+	publisher = {ECMWF},
+	address = {Shinfield Park, Reading},
+	author = {P. Berrisford and D.P. Dee and P. Poli and R. Brugge and K. Fielding and M. Fuentes and P.W. K{\r a}llberg and S. Kobayashi and S. Uppala and A. Simmons}
+}
+
+@inproceedings{larraondo2017automating,
+  title={Automating weather forecasts based on convolutional networks},
+  author={Rozas Larraondo, Pablo and Inza, Inaki and Lozano, Jose A.},
+  booktitle={ICML 17 Workshop on Deep Structured Prediction},
+  year={2017}
+}
+
+@inproceedings{xingjian2015convolutional,
+  title={Convolutional LSTM network: A machine learning approach for precipitation nowcasting},
+  author={Xingjian, SHI and Chen, Zhourong and Wang, Hao and Yeung, Dit-Yan and Wong, Wai-Kin and Woo, Wang-chun},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={802--810},
+  year={2015}
+}
+
+@article{demsar2006,
+  author  = {Demsar, J.},
+  title   = {Statistical comparisons of classifiers over multiple data sets.},
+  journal = {Journal of Machine Learning Research},
+  volume  = {7},
+  year    = {2006},
+  pages   = {1-30}
+}
+
+@article{calvo2015,
+  author  = {Calvo, B. and Santafe, G.},
+  title   = {scmamp: Statistical Comparison of Multiple Algorithms in Multiple Problems.},
+  journal = {The R Journal},
+  year    = {2016},
+}
+
+@article{hintze1998violin,
+  title={Violin plots: a box plot-density trace synergism},
+  author={Hintze, Jerry L and Nelson, Ray D},
+  journal={The American Statistician},
+  volume={52},
+  number={2},
+  pages={181--184},
+  year={1998},
+  publisher={Taylor \& Francis Group}
+}
+
+@inproceedings{taskar2005learning,
+  title={Learning structured prediction models: A large margin approach},
+  author={Taskar, Ben and Chatalbashev, Vassil and Koller, Daphne and Guestrin, Carlos},
+  booktitle={Proceedings of the 22nd international conference on Machine learning},
+  pages={896--903},
+  year={2005},
+  organization={ACM}
+}
+
+@inproceedings{gupta2010estimating,
+  title={Estimating spatial layout of rooms using volumetric reasoning about objects and surfaces},
+  author={Gupta, Abhinav and Hebert, Martial and Kanade, Takeo and Blei, David M},
+  booktitle={Advances in neural information processing systems},
+  pages={1288--1296},
+  year={2010}
+}
+
+@inproceedings{tran2012max,
+  title={Max-margin structured output regression for spatio-temporal action localization},
+  author={Tran, Du and Yuan, Junsong},
+  booktitle={Advances in neural information processing systems},
+  pages={350--358},
+  year={2012}
+}
+
+@incollection{guyon2006introduction,
+  title={An introduction to feature extraction},
+  author={Guyon, Isabelle and Elisseeff, Andr{\'e}},
+  booktitle={Feature extraction},
+  pages={1--25},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{loridan2017machine,
+  title={A Machine Learning Approach to Modeling Tropical Cyclone Wind Field Uncertainty},
+  author={Loridan, Thomas and Crompton, Ryan P and Dubossarsky, Eugene},
+  journal={Monthly Weather Review},
+  volume={145},
+  number={8},
+  pages={3203--3221},
+  year={2017}
+}
+
+@article{gagne2014machine,
+  title={Machine learning enhancement of storm-scale ensemble probabilistic quantitative precipitation forecasts},
+  author={Gagne, David John and McGovern, Amy and Xue, Ming},
+  journal={Weather and Forecasting},
+  volume={29},
+  number={4},
+  pages={1024--1043},
+  year={2014}
+}
+
+@article{bengio2013representation,
+  title={Representation learning: A review and new perspectives},
+  author={Bengio, Yoshua and Courville, Aaron and Vincent, Pascal},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={35},
+  number={8},
+  pages={1798--1828},
+  year={2013},
+  publisher={IEEE}
+}
+
+@article{pohlert2014pairwise,
+  title={The pairwise multiple comparison of mean ranks package (PMCMR)},
+  author={Pohlert, Thorsten},
+  journal={R package},
+  pages={2004--2006},
+  year={2014}
+}
+
+@article{liu2016application,
+  title={Application of deep convolutional neural networks for detecting extreme weather in climate datasets},
+  author={Liu, Yunjie and Racah, Evan and Correa, Joaquin and Khosrowshahi, Amir and Lavers, David and Kunkel, Kenneth and Wehner, Michael and Collins, William and others},
+  journal={arXiv preprint arXiv:1605.01156},
+  year={2016}
+}
+
+@article{baldi2014searching,
+  title={Searching for exotic particles in high-energy physics with deep learning},
+  author={Baldi, Pierre and Sadowski, Peter and Whiteson, Daniel},
+  journal={Nature communications},
+  volume={5},
+  pages={4308},
+  year={2014},
+  publisher={Nature Publishing Group}
+}
+
+@article{shallue2018identifying,
+  title={Identifying Exoplanets with Deep Learning: A Five-planet Resonant Chain around Kepler-80 and an Eighth Planet around Kepler-90},
+  author={Shallue, Christopher J and Vanderburg, Andrew},
+  journal={The Astronomical Journal},
+  volume={155},
+  number={2},
+  pages={94},
+  year={2018},
+  publisher={IOP Publishing}
+}
+
+@article{greenspan2016guest,
+  title={Guest editorial deep learning in medical imaging: Overview and future promise of an exciting new technique},
+  author={Greenspan, Hayit and van Ginneken, Bram and Summers, Ronald M},
+  journal={IEEE Transactions on Medical Imaging},
+  volume={35},
+  number={5},
+  pages={1153--1159},
+  year={2016},
+  publisher={IEEE}
+}
+
+
+
+@article{DBLP:journals/corr/YuK15,
+  author    = {Fisher Yu and
+               Vladlen Koltun},
+  title     = {Multi-Scale Context Aggregation by Dilated Convolutions},
+  journal   = {CoRR},
+  volume    = {abs/1511.07122},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1511.07122},
+  archivePrefix = {arXiv},
+  eprint    = {1511.07122},
+  timestamp = {Wed, 07 Jun 2017 14:40:43 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/YuK15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{kain2004kain,
+  title={The Kain--Fritsch convective parameterization: an update},
+  author={Kain, John S},
+  journal={Journal of applied meteorology},
+  volume={43},
+  number={1},
+  pages={170--181},
+  year={2004}
+}
+
+@article{crawford1999improved,
+  title={An improved parameterization for estimating effective atmospheric emissivity for use in calculating daytime downwelling longwave radiation},
+  author={Crawford, Todd M and Duchon, Claude E},
+  journal={Journal of Applied Meteorology},
+  volume={38},
+  number={4},
+  pages={474--480},
+  year={1999}
+}
+
+@article{isola2017image,
+  title={Image-to-image translation with conditional adversarial networks},
+  author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A},
+  journal={arXiv preprint},
+  year={2017}
+}
+
+@inproceedings{krizhevsky2012imagenet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  booktitle={Advances in neural information processing systems},
+  pages={1097--1105},
+  year={2012}
+}
+
+@inproceedings{karpathy2015deep,
+  title={Deep visual-semantic alignments for generating image descriptions},
+  author={Karpathy, Andrej and Fei-Fei, Li},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={3128--3137},
+  year={2015}
+}
+
+@inproceedings{amodei2016deep,
+  title={Deep speech 2: End-to-end speech recognition in english and mandarin},
+  author={Amodei, Dario and Ananthanarayanan, Sundaram and Anubhai, Rishita and Bai, Jingliang and Battenberg, Eric and Case, Carl and Casper, Jared and Catanzaro, Bryan and Cheng, Qiang and Chen, Guoliang and others},
+  booktitle={International Conference on Machine Learning},
+  pages={173--182},
+  year={2016}
+}
+
+@article{widrow199030,
+  title={30 years of adaptive neural networks: perceptron, madaline, and backpropagation},
+  author={Widrow, Bernard and Lehr, Michael A},
+  journal={Proceedings of the IEEE},
+  volume={78},
+  number={9},
+  pages={1415--1442},
+  year={1990},
+  publisher={IEEE}
+}
+
+@article{hu2015transferring,
+  title={Transferring deep convolutional neural networks for the scene classification of high-resolution remote sensing imagery},
+  author={Hu, Fan and Xia, Gui-Song and Hu, Jingwen and Zhang, Liangpei},
+  journal={Remote Sensing},
+  volume={7},
+  number={11},
+  pages={14680--14707},
+  year={2015},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@article{mueller2016water,
+  title={Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia},
+  author={Mueller, Norman and Lewis, Adam and Roberts, Dale and Ring, Steven and Melrose, R and Sixsmith, J and Lymburner, Leo and McIntyre, A and Tan, P and Curnow, S and others},
+  journal={Remote Sensing of Environment},
+  volume={174},
+  pages={341--352},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@inproceedings{milletari2016v,
+  title={V-net: Fully convolutional neural networks for volumetric medical image segmentation},
+  author={Milletari, Fausto and Navab, Nassir and Ahmadi, Seyed-Ahmad},
+  booktitle={3D Vision (3DV), 2016 Fourth International Conference on},
+  pages={565--571},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{lecun2010convolutional,
+  title={Convolutional networks and applications in vision},
+  author={LeCun, Yann and Kavukcuoglu, Koray and Farabet, Cl{\'e}ment},
+  booktitle={Circuits and Systems (ISCAS), Proceedings of 2010 IEEE International Symposium on},
+  pages={253--256},
+  year={2010},
+  organization={IEEE}
+}
+
+@incollection{rossa2008overview,
+  title={Overview of methods for the verification of quantitative precipitation forecasts},
+  author={Rossa, Andrea and Nurmi, Pertti and Ebert, Elizabeth},
+  booktitle={Precipitation: Advances in measurement, estimation and prediction},
+  pages={419--452},
+  year={2008},
+  publisher={Springer}
+}
+
+@article{rozas2014method,
+  title={A method for wind speed forecasting in airports based on nonparametric regression},
+  author={Rozas-Larraondo, Pablo and Inza, I{\~n}aki and Lozano, Jose A},
+  journal={Weather and Forecasting},
+  volume={29},
+  number={6},
+  pages={1332--1342},
+  year={2014}
+}
+
+@article{kuligowski1998localized,
+  title={Localized precipitation forecasts from a numerical weather prediction model using artificial neural networks},
+  author={Kuligowski, Robert J and Barros, Ana P},
+  journal={Weather and forecasting},
+  volume={13},
+  number={4},
+  pages={1194--1204},
+  year={1998}
+}
+
+@article{foley2012current,
+  title={Current methods and advances in forecasting of wind power generation},
+  author={Foley, Aoife M and Leahy, Paul G and Marvuglia, Antonino and McKeogh, Eamon J},
+  journal={Renewable Energy},
+  volume={37},
+  number={1},
+  pages={1--8},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{chen2018deeplab,
+  title={Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs},
+  author={Chen, Liang-Chieh and Papandreou, George and Kokkinos, Iasonas and Murphy, Kevin and Yuille, Alan L},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={40},
+  number={4},
+  pages={834--848},
+  year={2018},
+  publisher={IEEE}
+}
+
+@article{hinton2006reducing,
+  title={Reducing the dimensionality of data with neural networks},
+  author={Hinton, Geoffrey E and Salakhutdinov, Ruslan R},
+  journal={science},
+  volume={313},
+  number={5786},
+  pages={504--507},
+  year={2006},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{lecun2015deep,
+  title={Deep learning},
+  author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  journal={nature},
+  volume={521},
+  number={7553},
+  pages={436},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+@inproceedings{krizhevsky2012imagenet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1097--1105},
+  year={2012}
+}
+
+@article{lipponen2013correction,
+  title={Correction of approximation errors with Random Forests applied to modelling of cloud droplet formation},
+  author={Lipponen, A and Kolehmainen, V and Romakkaniemi, S and Kokkola, H},
+  journal={Geoscientific Model Development},
+  volume={6},
+  number={6},
+  pages={2087--2098},
+  year={2013},
+  publisher={Copernicus GmbH}
+}
+
+@inproceedings{chang2004super,
+  title={Super-resolution through neighbor embedding},
+  author={Chang, Hong and Yeung, Dit-Yan and Xiong, Yimin},
+  booktitle={Computer Vision and Pattern Recognition, 2004. CVPR 2004. Proceedings of the 2004 IEEE Computer Society Conference on},
+  volume={1},
+  pages={I--I},
+  year={2004},
+  organization={IEEE}
+}
+
+@inproceedings{schulter2015fast,
+  title={Fast and accurate image upscaling with super-resolution forests},
+  author={Schulter, Samuel and Leistner, Christian and Bischof, Horst},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={3791--3799},
+  year={2015}
+}
+
+@article{pal1993review,
+  title={A review on image segmentation techniques},
+  author={Pal, Nikhil R and Pal, Sankar K},
+  journal={Pattern recognition},
+  volume={26},
+  number={9},
+  pages={1277--1294},
+  year={1993},
+  publisher={Elsevier}
+}
+
+@article{haralick1985image,
+  title={Image segmentation techniques},
+  author={Haralick, Robert M and Shapiro, Linda G},
+  journal={Computer vision, graphics, and image processing},
+  volume={29},
+  number={1},
+  pages={100--132},
+  year={1985},
+  publisher={Elsevier}
+}
+
+@article{haralick1973textural,
+  title={Textural features for image classification},
+  author={Haralick, Robert M and Shanmugam, Karthikeyan and others},
+  journal={IEEE Transactions on systems, man, and cybernetics},
+  number={6},
+  pages={610--621},
+  year={1973},
+  publisher={Ieee}
+}
+
+@article{takeda2007kernel,
+  title={Kernel regression for image processing and reconstruction},
+  author={Takeda, Hiroyuki and Farsiu, Sina and Milanfar, Peyman},
+  journal={IEEE Transactions on image processing},
+  volume={16},
+  number={2},
+  pages={349--366},
+  year={2007},
+  publisher={IEEE}
+}
+
+@article{pal2005random,
+  title={Random forest classifier for remote sensing classification},
+  author={Pal, Mahesh},
+  journal={International Journal of Remote Sensing},
+  volume={26},
+  number={1},
+  pages={217--222},
+  year={2005},
+  publisher={Taylor \& Francis}
+}
+
+@article{breiman2001random,
+  title={Random forests},
+  author={Breiman, Leo},
+  journal={Machine learning},
+  volume={45},
+  number={1},
+  pages={5--32},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{feng20073,
+  title={A 3-mode parameterization of below-cloud scavenging of aerosols for use in atmospheric dispersion models},
+  author={Feng, Jian},
+  journal={Atmospheric Environment},
+  volume={41},
+  number={32},
+  pages={6808--6822},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{berner2017stochastic,
+  title={Stochastic parameterization: Toward a new view of weather and climate models},
+  author={Berner, Judith and Achatz, Ulrich and Batte, Lauriane and Bengtsson, Lisa and C{\'a}mara, Alvaro de la and Christensen, Hannah M and Colangeli, Matteo and Coleman, Danielle RB and Crommelin, Daan and Dolaptchiev, Stamen I and others},
+  journal={Bulletin of the American Meteorological Society},
+  volume={98},
+  number={3},
+  pages={565--588},
+  year={2017}
+}
+
+@article{tiedtke1989comprehensive,
+  title={A comprehensive mass flux scheme for cumulus parameterization in large-scale models},
+  author={Tiedtke, MICHAEL},
+  journal={Monthly Weather Review},
+  volume={117},
+  number={8},
+  pages={1779--1800},
+  year={1989}
+}
+
+@article{bougeault2003wgne,
+  title={The WGNE survey of verification methods for numerical prediction of weather elements and severe weather events},
+  author={Bougeault, Philippe},
+  journal={Toulouse: M{\'e}t{\'e}o-France},
+  year={2003}
+}
+
+@article{mass2002does,
+  title={Does increasing horizontal resolution produce more skillful forecasts?},
+  author={Mass, Clifford F and Ovens, David and Westrick, Ken and Colle, Brian A},
+  journal={Bulletin of the American Meteorological Society},
+  volume={83},
+  number={3},
+  pages={407--430},
+  year={2002}
+}
+
+@book{stensrud2009parameterization,
+  title={Parameterization schemes: keys to understanding numerical weather prediction models},
+  author={Stensrud, David J},
+  year={2009},
+  publisher={Cambridge University Press}
+}
+
+@misc{chollet2017keras,
+  title={Keras (2015)},
+  author={Chollet, Fran{\c{c}}ois and others},
+  year={2017}
+}
+
+@inproceedings{abadi2016tensorflow,
+  title={TensorFlow: A System for Large-Scale Machine Learning.},
+  author={Abadi, Mart{\'\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and others},
+  booktitle={OSDI},
+  volume={16},
+  pages={265--283},
+  year={2016}
+}
+
+@CONFERENCE{Kuji_Nakajima2002,
+AUTHOR = {M. Kuji and T. Nakajima},
+	YEAR = 2002,
+	TITLE = {Retrieval of cloud geometrical parameters using remote sensing data},
+	BOOKTITLE = {{\rm Preprints,} 11th Conf. on Cloud Physics},
+	ADDRESS = {Ogden, UT},
+	ORGANIZATION = {Amer. Meteor. Soc.},
+	PAGES = {JP1.7},
+	NOTE = {[Available online at \url{http://ams.confex.com/ams/pdfpapers/39550.pdf}.]}
+
+@article {MeixnerEA2002,
+author = {T. Meixner and L. A. Bastidas and H. V. Gupta and R. C. Bales},
+title = {Multicriteria parameter estimation for models of stream chemical composition},
+journal = {Water Resour. Res.},
+volume = {38},
+doi = {10.1029/2000WR000112},
+eid = {1027},
+year = {2002}
+}
