@@ -184,6 +184,10 @@ A generalisation of convolutional encoder-decoder networks is found in pixel-to-
 
 NWPs simulate a large number of physical variables with different levels or dependence. Some of these variables are derived from other fields using physical equations or parameterisation models. Convolutional encoder-decoder networks provide a generic methodology to perform regression between different weather fields. These networks can therefore be used to learn the underlying relationships between NWP fields. In the next section we explore the use of CNNs to learn NWP parameterisations using basic fields as input.
 
+
+\section{Dataset and methodology}
+
+\subsection{Dataset}
 For this work, we use the NWP ERA-Interim \citep{dee2011era} global climate reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). This dataset contains data from 1979 every 6 hours to present. The spatial resolution of the data set is approximately 80 km (reduced Gaussian grid N128) on 60 vertical levels from the surface up to 0.1 hPa. ERA-Interim data is publicly accessible from ECMWF's Public Datasets web interface \citep{1321008426928}.
 
 ERA-Interim makes available a large number of output parameters, from which we choose geopotential height \textit{(\textbf{z})} and total precipitation \textit{(\textbf{tp})}. The experiments in the next section train models that can learn to predict total precipitation using geopotential height fields as the only input.
