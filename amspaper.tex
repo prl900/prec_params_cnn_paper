@@ -169,26 +169,15 @@ The convolution operations, at each layer of a CNN, are commonly followed by an 
 
 Convolutions, on each layer of a CNN, transform the dimensionality of the input image reducing its spatial extent and expanding, at the same time, the number of features along a third dimensional axis. This expansion of the image shape along the third dimension reases the information by the image at each layer of the network, in which different layers encode different relationships in the image. This expansion in depth of the images is achieved using 3-dimensional kernels, in which 2-dimensional kernels are stacked and each one individually learns to detect specific patterns in the image.
 
-CNNs have been applied to solve many classification \citep{} and regression tasks.
-kernel/filter difference -> http://cs231n.github.io/convolutional-networks/
-depth feature expansion
-https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1
+CNNs have been applied to solve many classification and regression tasks in different fields, such as medical image analysis \citep{litjens2017survey}, high-energy physics \citep{baldi2014searching} or astronomy \citep{dieleman2015rotation}. CNNs have demonstrated to be an effective approach in which similar architectures can be trained to perform different tasks.
 
-
-
-Autoencoders \citep{hinton2006reducing} are generic neural networks that reproduce the input by performing a dimensionality reduction and subsequent expansion of the input space. This technique allows learning compressed representations of the data in an unsupervised manner. Convolutional autoencoders \citep{masci2011stacked} use CNNs to learn compressed representations of images. Convolutional encoder-decoder networks are a latter evolution of convolutional autoencoders which can perform image segmentation tasks, by mapping an input image to an output segmented image \citep{long2015fully}.
+Autoencoders \citep{hinton2006reducing} are a type of neural networks that can learn to create compressed representations of the input data. These networks perform a dimensionality reduction followed by an expansion of the input space trained to recreate the original input. Convolutional autoencoders \citep{masci2011stacked} use CNNs to learn compressed representations of images. Convolutional encoder-decoder networks use convolutional layers to compress, or reduce the dimensionality of input images, followed by deconvolutional layers, which perform the inverse operation by expanding the dimension of the data. These two parts define a symetrical structure in which the first half receives the name of encoder and the second half is the decoder. Convolutional encoder-decoder networks have been mainly used to perform image segmentation tasks, in which the network has to identify parts of an image belonging to the same class \citep{long2015fully}.
 
 Image segmentation using convolutional encoder-decoder networks has been an active area of research in recent years \citep{krizhevsky2012imagenet,chen2018deeplab}. Several techniques and network architectures have been proposed to improve the accuracy of the image segmenting process. The main constraint of convolutional encoder-decoder networks is the loss of spatial information, caused by dimensionality reduction pooling operations \citep{scherer2010evaluation}. A consequence of this is that output images lack resolution and features often become blurry or ill defined. Many convolutional encoder-decoder network architectures have been proposed to mitigate the loss of spatial information: Segnet \citep{badrinarayanan2017segnet} uses the transferred pool indices from its encoder to communicate the exact pixel position to the decoder. U-net \citep{ronneberger2015u}, on the other hand, enables precise localization by creating connections between the symmetric convolution and deconvolution operations to capture spatial context.
 
-A generalisation of convolutional encoder-decoder networks is found in pixel-to-pixel regression or image-to-image translation networks \citep{isola2017image}. Existing segmentation networks can be easily modified to perform image-to-image translation tasks by substituting the classification loss function by a regression one, such as Root Mean Square Error (RMSE) or Mean Absolute Error (MAE).
+A generalisation of convolutional encoder-decoder networks is found in pixel-to-pixel regression or image-to-image translation networks \citep{isola2017image}. Existing networks used in to perform image segmentation can be applied to regression problems by replacing the network's loss function by a regression one, such as Root Mean Square Error (RMSE) or Mean Absolute Error (MAE).
 
-Although most of the research on CNNs has been performed using colour images as input, the same networks have been proven to be effective with other types of image data, such as multispectral images in the fields of remote sensing \citep{hu2015transferring} or volumetric medical imaging \citep{milletari2016v}. In weather forecasting, NWPs produce gridded outputs representing physical parameters for different vertical levels of the atmosphere. In this paper we propose the use of NWP fields as input channels for CNNs, combining them to analyse and interpret weather data.
-
-The experimental section in this paper explores the application of convolutional encoder-decoder segmentation networks adapted to perform grid to grid regression (image to image regression) and learn NWP parameterisations directly from basic atmospheric fields. Specifically, we demonstrate how the total precipitation field can be learned, per grid point, using geopotential height as the only input.
-
-\section{Dataset and methodology}
-
-\subsection{Dataset}
+NWPs simulate a large number of physical variables with different levels or dependence. Some of these variables are derived from other fields using physical equations or parameterisation models. Convolutional encoder-decoder networks provide a generic methodology to perform regression between different weather fields. These networks can therefore be used to learn the underlying relationships between NWP fields. In the next section we explore the use of CNNs to learn NWP parameterisations using basic fields as input.
 
 For this work, we use the NWP ERA-Interim \citep{dee2011era} global climate reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). This dataset contains data from 1979 every 6 hours to present. The spatial resolution of the data set is approximately 80 km (reduced Gaussian grid N128) on 60 vertical levels from the surface up to 0.1 hPa. ERA-Interim data is publicly accessible from ECMWF's Public Datasets web interface \citep{1321008426928}.
 
@@ -486,3 +475,9 @@ Jose A. Lozano is also supported by BERC program 2014-2017 (Basque Gov.) and Sev
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END OF AMSPAPER.TEX
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% amspaper.tex --  LaTeX-based template for submissions to American 
+% Meteorological Society journals
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% amspaper.tex --  LaTeX-based template for submissions to American 
+% Meteorological Society journals
